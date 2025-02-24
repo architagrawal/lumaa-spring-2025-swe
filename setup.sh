@@ -15,6 +15,7 @@ for folder in "${folders[@]}"; do
   fi
 done
 
+
 # Run npm install in both directories
 for folder in "${folders[@]}"; do
   echo "Installing dependencies in $folder..."

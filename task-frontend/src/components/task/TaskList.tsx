@@ -4,12 +4,6 @@ import TaskItem from "./TaskItem";
 import TaskForm from "./TaskForm";
 import { config } from "../../config/config";
 import { Task } from "../../types/task.types";
-// interface Task {
-//   id: number;
-//   title: string;
-//   description?: string;
-//   isComplete: boolean;
-// }
 
 const TaskList: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);

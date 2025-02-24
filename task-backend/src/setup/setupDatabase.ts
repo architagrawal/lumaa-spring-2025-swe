@@ -4,14 +4,6 @@ import bcrypt from "bcrypt";
 import path from "path";
 
 dotenv.config({ path: path.join(process.cwd(), ".env") });
-
-// const pool = new Pool({
-//   user: "postgres",
-//   host: "localhost",
-//   database: "lumaa",
-//   password: "root",
-//   port: parseInt("5432"),
-// });
 const pool = new Pool({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
